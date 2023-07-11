@@ -1,0 +1,2153 @@
+@font-face {
+    font-family: 'LexendPeta';
+    src: url("../fonts/LexendPeta-VariableFont_wght.ttf");
+}
+
+
+@media (min-width: 950px){
+    
+
+
+* {
+    font-family: "LexendPeta";
+
+
+    
+}
+
+html{
+    height: 100%;
+    overflow-x: hidden;
+    
+}
+
+/* body {
+    color: aliceblue;
+    position: sticky;
+    margin: 0%;
+    padding: 0%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(62, 62, 68, 1) 42%);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+} */
+
+
+body{
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(62, 62, 68, 1) 42%);
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: aliceblue;
+    position: sticky;
+    /* width: 100vw; */
+    height: 100%;
+    
+    
+   
+}
+
+/* navbar */
+
+#section_Nav {
+    margin: 10px;
+    padding: 10px;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+h1 {
+    position: relative;
+    font-size: 40px;
+    left: -1%;
+}
+.visuallyHidden {
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height: 1px; width: 1px; 
+    margin: -1px; padding: 0; border: 0; 
+    border: rebeccapurple 4px solid;
+    z-index: 99;
+}
+
+.bar1 {
+    top: 0;
+    background-color: red;
+    z-index: 99;
+}
+
+.bar2,
+.bar3 {
+    top: 13.5px;
+    background-color: red;
+    z-index: 99;
+}
+
+.bar3 {
+    right: 0;
+    background-color: aqua;
+    z-index: 99;
+}
+
+.bar4 {
+    bottom: 0;
+    background-color: red;
+    z-index: 99;
+}
+
+.hamburger .bar {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute; 
+}
+
+.hamburger {
+    margin: 0 auto;
+    /* margin-top: 30px; */
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.checkbox4:checked + label > .hamburger4 > .bar1{
+    top: 13.5px;
+    background-color: transparent;
+}
+
+.checkbox4:checked + label > .hamburger4 > .bar2{
+    left: 0px;
+    width: 30px;
+    transform: rotate(45deg);
+}
+
+.checkbox4:checked + label > .hamburger4 > .bar3{
+    left: 0;
+    width: 30px;
+    transform: rotate(-45deg);
+}
+
+.checkbox4:checked + label > .hamburger4 > .bar4{
+    background-color: transparent;
+}
+
+.checkbox4:checked + label > .hamburger4 > .bar5{
+    bottom: 13.5px;
+    background-color: transparent; 
+}
+
+
+/* logo */
+
+#logo{
+    display: grid;
+    flex-direction: inherit;
+    justify-content: center;
+}
+
+#logo h6{
+    position: relative;
+    left: -10%;
+}
+
+
+
+/* searchBar */
+@keyframes RISEUP {
+        
+    0%{top: -360px;};
+   
+    
+    
+}
+@keyframes RISEIN {
+    0%{top: -400px;}; 
+}
+
+#search_popup {
+    position: absolute;
+    display: none;
+    height: fit-content;
+    top: 100px;
+    z-index: 98;
+    animation-name: RISEUP;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    transition: all;
+}
+
+.searchBar{
+  position: relative;
+    all: unset;
+    background: none;
+    color: aliceblue;
+    height: 20px;
+    width: 50px;
+    
+}
+
+#closeBTN{
+    width: 32px;
+    position: absolute;
+    top: 6px;
+    left: 90%;
+}
+
+.input{
+   position: relative;
+    border: 2px red solid;
+    border-radius: 10px;
+    height: 40px;
+    width: 90%;
+    padding-top: 2px;
+}
+.output{
+ position: relative;
+    border: 2px aqua solid;
+    border-radius: 10px;
+    background: none;
+    height: 40px;
+    width: 90%;
+    top: 4px;
+    font-size: 11px;
+   
+}
+
+#submit{
+  position: relative;
+    border-bottom: 1px aqua solid;
+    border-right: 1px red solid;
+    border-radius: 10px;
+    background: none;
+    color: aliceblue;
+    height: 40px;
+    left: 3px;
+    top: 50px;
+  
+}
+#card {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   justify-self: center;
+   align-items: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border-left: aqua 2px solid;
+    border-bottom: red 2px solid;
+    border-top: aqua 2px solid;
+    border-right: red 2px solid;
+    height:350px;
+    width: 100%;
+    top: -100px;
+
+    margin-left: 3%;
+    z-index: 99;
+    
+    
+}
+#card p{
+    position: relative;
+    top: -30px;
+    text-align: center;
+    font-size: x-small;
+    
+}
+#card h3{
+    position: relative;
+    top: -40px;
+    text-align: center;
+   
+    
+}
+
+#copyed{
+    position: absolute;
+    top: 1000px;
+}
+@keyframes copy-play {
+   
+    0% { opacity:100%;}
+    0% { top: 220px;}
+    100% { top: 190px;}
+    100% { opacity:10%; }
+   
+}
+
+#sweep{
+    position: relative;
+    animation-name: RISEUP;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    transition: ease-in-out;
+    
+}
+
+/* menu popup /////////////////////////////////////////////////////*/
+
+@keyframes slideout{
+    0%{top: -900px;}
+    100%{top:0px;}
+}
+@keyframes slidein{
+    0%{top: -900px;}
+    100%{top:0px;}
+}
+
+#menu_popup{
+    display: none;
+    position: absolute;
+    margin: 0%;
+    width: 21%;
+    height: 300px;
+    right: -6%;
+    top: 0px;
+    border-radius: 10px;
+    border-left: aqua 2px solid;
+    border-top: red 2px solid;
+    border-bottom: red 2px solid;
+    border-right: aqua 2px solid;
+    background-color: rgb(0, 0, 0);
+    animation-name: slideout;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    transition: all;
+    z-index: 98;
+    
+}
+
+#menu{
+    
+    position: relative;
+    width: 55%;
+    padding: 10%;
+    left: 3%;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-end;
+    
+}
+
+
+#menuMint:hover{
+    cursor: pointer;
+    color: aqua;
+}
+
+
+#menu a{
+    display: block;
+    position: absolute;
+    all: unset;
+    cursor: pointer;
+    padding-top: 20px;
+    font-size: 14px;
+    
+}
+#menu a:hover{
+    color: aqua;
+    
+}
+
+
+
+
+/* graphs */
+
+#section_stats {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap:5%;
+    text-align: center;
+}
+
+.graph {
+   
+    overflow: hidden;
+    width: 50%;
+    height: 20px;
+    
+    border-radius: 19px;
+    background-color: red;
+}
+
+.graphWarpper{
+        display: grid;
+        position: relative;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        justify-self: center;
+        text-align: center;
+        font-size: larger;
+       
+        
+        width: 100%;
+        
+
+}
+
+.graphTag{
+    position: relative;
+    top: -20%;
+   
+}
+.data{
+    position: relative;
+    
+    
+}
+.remaining{
+    position: relative;
+    left:22% ; 
+    
+}
+.reward{
+    position: relative;
+    right:22% 
+    
+}
+
+
+@keyframes loadIN {
+    0% { width: 1px; }
+    50% { width: 99%; }
+}
+
+
+
+#regUser {
+    text-align: center;
+}
+
+#regGraph {
+    display: flex;
+    text-align: center;
+    
+}
+
+#regCounter {
+    background-color: aqua;
+    transition: all;
+    animation-name: loadIN;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    
+}
+
+#supplyGraph {
+    display: flex;
+    
+    margin-left: 40%;
+}
+
+#supplyCounter {
+    background-color: aqua;
+    transition: all;
+    animation-name: loadIN;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+#rewardGraph {
+    display: flex;
+    
+    margin-right: 40%;
+}
+
+#rewardCounter {
+    background-color: aqua;
+    transition: all;
+    animation-name: loadIN;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+#slant {
+    position: relative;
+    overflow: visible;
+    background-color: aliceblue;
+    width: 5px;
+    border-radius: 10px;
+    height: 40px;
+    z-index: 99;
+}
+
+
+
+
+
+
+/* links */
+#linkContainer{
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   margin-top: -1%;
+
+}
+
+
+
+#linkBtn:hover{
+    position: sticky;
+    border: 1px aqua solid;
+    border-radius: 10px;
+    
+    
+}
+#linkBtnfollow:hover{
+    position: sticky;
+    border: 1px aqua solid;
+    border-radius: 10px;
+    
+    
+}
+#linkBtn{
+    position: sticky;
+    border: 1px rgba(0, 255, 255, 0) solid;
+    border-radius: 10px;
+   
+}
+#linkBtnfollow{
+    position: sticky;
+    border: 1px rgba(0, 255, 255, 0) solid;
+    border-radius: 10px;
+   
+}
+
+
+/* tikinfo */
+
+
+#tikInfo{
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#tikInfo p{
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative;
+    width: 60%;
+    font-size: 20px;
+    text-align: justify;
+    /* word-spacing: 2%; */
+}
+
+#tikInfo_contractInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ContractAddress{
+    all: unset;
+    width: 500px;
+    height:fit-content;
+    background: none;
+    border-bottom: 2px white solid;
+    color: aliceblue;
+}
+
+/*//////////////Scroll Targets///////////////////////////////////////////*/
+
+.target{
+    border: tan thin solid;
+}
+
+/* footer/////////////////////////////////////////////////////////////////// */
+
+#tikExplorer{
+    display: flex;
+    position: sticky;
+    top: 0;
+    gap: 15%;
+    width: 100%;
+    margin-left: 0%;
+    justify-content: center;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.473);
+    
+   
+    
+    
+}
+
+.tikItems{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-bottom:5px rgba(255, 255, 255, 0) solid ;
+    z-index: 99;
+}
+
+.tikItems:hover{
+    border-bottom:5px rgb(255, 255, 255) solid ;
+}
+
+
+#tikExplorer img{
+    width: 50%;
+    border-spacing: 10%;
+    
+    border: rgba(255, 0, 0, 0) 10px solid;
+    border-radius: 10px;
+    z-index: 99;
+}
+
+
+.windowCard{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgba(0, 0, 0, 0.295);
+    border-top: aqua 2px solid;
+    border-left: red 2px solid;
+    border-right: aqua 2px solid;
+    border-bottom: red 2px solid; */
+    
+    width: 80%;
+    height: 100%;
+
+    
+   /* overflow-y: scroll; */
+   overflow-x: hidden;
+    margin-left: 10%;
+ }
+
+ #mint{
+    display: flex;
+    
+    flex-direction: column;
+    margin-bottom: 10%;
+ }
+ #mint h2{
+    color: rgb(179, 5, 5);
+ }
+ #mint span{
+    width: auto;
+    text-align: left;
+ }
+ .iframe iframe{
+    
+
+    width: 1000px;
+    height: 2600px
+
+ }
+
+
+
+
+
+ .iframe{
+display: flex;
+justify-content: center;
+
+ }
+ /* #playList span{
+    display: flex;
+    position: relative;
+    width: 400px;
+    overflow-y: hidden;
+    flex-direction: row;
+    
+   
+    align-items: center;
+    margin-bottom: 40%;
+
+
+ } */
+ #playList iframe{
+    display: flex;
+    position: relative;
+    width: 400px;
+    height: 800px;
+    overflow-y: hidden;
+    flex-direction: row;
+    
+   
+    align-items: center;
+    margin-bottom: 40%;
+
+
+ }
+
+ #tikomics{
+    display: flex;
+    
+    text-align: left;
+    flex-direction: column;
+    margin-bottom: 10%;
+ }
+
+ 
+ #tikomics table{
+    border: 1px white solid;
+ }
+ #tikomics tr{
+    border: 1px white solid;
+ }
+ #tikomics th{
+    border: 1px white solid;
+    font-size: small;
+    text-align: center;
+    
+ }
+ #tikomics td{
+    border: 1px white solid;
+    text-align: left;
+ }
+ 
+ 
+ /* sig /////////////////////////////////////////////////////////////////////*/
+footer a{
+    all: unset;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 12px;
+    
+}
+footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+    left: -10px;
+    width: 100%;
+    font-size: 16px;
+    background-color: black;
+
+}
+
+
+
+
+}
+
+
+
+/* MOBILE///////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////// */
+
+
+
+@media (max-width: 650px) {
+
+    
+   
+    *{
+        padding: 0%;
+        margin: 0%;
+        font-family: "LexendPeta";
+
+    }
+
+    html{
+        height: 100%;
+        overflow-x: hidden;
+        
+    }
+
+
+    body{
+        background: rgb(0, 0, 0);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(62, 62, 68, 1) 42%);
+        
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: aliceblue;
+        position: sticky;
+        /* width: 100vw; */
+        height: 100%;
+        overflow-x: hidden;
+        
+       
+    }
+
+
+    /* Nav Bar ///////////////////////////////////////////////////////*/
+
+    #section_Nav nav{
+        margin: 3%;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        justify-content: space-between;
+        
+    }
+    
+    #logo{
+        position: relative;
+        display: grid;
+        gap: 20px;
+        left: 25px;
+       justify-content: center;
+      
+    }
+    #logo h6{
+        position: relative;
+        left: -30px;
+    }
+
+
+    .visuallyHidden {
+        position: absolute; 
+        overflow: hidden; 
+        clip: rect(0 0 0 0); 
+        height: 1px; width: 1px; 
+        margin: -1px; padding: 0; border: 0; 
+        z-index: 99;
+    }
+    
+    .bar1 {
+        top: 0;
+        background-color: red;
+        z-index: 99;
+    }
+    
+    .bar2,
+    .bar3 {
+        top: 13.5px;
+        background-color: red;
+        z-index: 99;
+    }
+    
+    .bar3 {
+        right: 0;
+        background-color: aqua;
+        z-index: 99;
+    }
+    
+    .bar4 {
+        bottom: 0;
+        background-color: red;
+        z-index: 99;
+    }
+    
+    .hamburger .bar {
+        padding: 0;
+        width: 30px;
+        height: 4px;
+        background-color: rgb(255, 255, 255);
+        display: block;
+        border-radius: 4px;
+        transition: all 0.4s ease-in-out;
+        position: absolute; 
+    }
+    
+    .hamburger {
+        margin: 0 auto;
+        /* margin-top: 30px; */
+        width: 30px;
+        height: 30px;
+        position: relative;
+    }
+    
+    .checkbox4:checked + label > .hamburger4 > .bar1{
+        top: 13.5px;
+        background-color: transparent;
+    }
+    
+    .checkbox4:checked + label > .hamburger4 > .bar2{
+        left: 0px;
+        width: 30px;
+        transform: rotate(45deg);
+    }
+    
+    .checkbox4:checked + label > .hamburger4 > .bar3{
+        left: 0;
+        width: 30px;
+        transform: rotate(-45deg);
+    }
+    
+    .checkbox4:checked + label > .hamburger4 > .bar4{
+        background-color: transparent;
+    }
+    
+    .checkbox4:checked + label > .hamburger4 > .bar5{
+        bottom: 13.5px;
+        background-color: transparent; 
+    }
+
+
+    /* search popup/////////////////////////////////////////////////// */
+
+    @keyframes RISEUP {
+        
+        0%{left: -1200px;};
+       
+        
+        
+    }
+    @keyframes RISEIN {
+        
+        0%{left: -1200px;};
+        
+        
+       
+        
+        
+    }
+
+    #search_popup {
+        position: absolute;
+        display: none;
+        height: fit-content;
+        top: 100px;
+        left: 0px;
+        z-index: 98;
+        animation-name: RISEUP;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        transition: all;
+    }
+
+    .searchBar{
+      position: relative;
+        all: unset;
+        background: none;
+        color: aliceblue;
+        height: 20px;
+        width: 50px;
+        
+    }
+
+    #closeBTN{
+        width: 32px;
+        position: absolute;
+        top: 6px;
+        left: 90%;
+    }
+
+    .input{
+       position: relative;
+        border: 2px red solid;
+        border-radius: 10px;
+        height: 40px;
+        width: 90%;
+        padding-top: 2px;
+    }
+    .output{
+     position: relative;
+        border: 2px aqua solid;
+        border-radius: 10px;
+        background: none;
+        height: 40px;
+        width: 90%;
+        top: 4px;
+        font-size: 11px;
+       
+    }
+
+    #submit{
+      position: relative;
+        border-bottom: 1px aqua solid;
+        border-right: 1px red solid;
+        border-radius: 10px;
+        background: none;
+        color: aliceblue;
+        height: 40px;
+        left: 3px;
+        top: 50px;
+      
+    }
+    #card {
+       position: relative;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+        background-color: rgb(0, 0, 0);
+        border-radius: 20px;
+        border-left: aqua 2px solid;
+        border-bottom: red 2px solid;
+        border-top: aqua 2px solid;
+        border-right: red 2px solid;
+        height: 350PX;
+        width: 93VW;
+        top: 100px;
+        margin-left: 3%;
+        z-index: 99;
+        
+        
+    }
+    #card p{
+        position: relative;
+        top: -30px;
+        text-align: center;
+        font-size: x-small;
+        
+    }
+    #card h3{
+        position: relative;
+        top: -40px;
+        text-align: center;
+       
+        
+    }
+
+    #copyed{
+        position: absolute;
+        top: 1000px;
+    }
+    @keyframes copy-play {
+       
+        0% { opacity:100%;}
+        0% { top: 220px;}
+        100% { top: 190px;}
+        100% { opacity:10%; }
+       
+    }
+
+    #sweep{
+        position: relative;
+        animation-name: RISEUP;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        transition: ease-in-out;
+        
+    }
+
+
+
+    /* menu popup /////////////////////////////////////////////////////*/
+
+    @keyframes slideout{
+        0%{right: -800px;}
+        100%{right:-100px;}
+    }
+    @keyframes slidein{
+        0%{right: -1000px;}
+        100%{right:-100px;}
+    }
+
+    #menu_popup{
+        display: none;
+        position: absolute;
+        top: 0px;
+        width: 65%;
+        height: 300px;;
+        right: -100px;
+        border-radius: 10px;
+        border-left: aqua 2px solid;
+        border-top: red 2px solid;
+        border-top: red 2px solid;
+        background-color: rgb(0, 0, 0);
+        animation-name: slideout;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        transition: all;
+        z-index: 95;
+        
+    }
+
+    #menu{
+       
+        position: relative;
+        width: 55%;
+        padding: 5%;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: flex-start;
+        align-items: flex-end;
+        
+        
+    }
+   
+   
+
+
+    #menu a{
+        display: block;
+        position: relative;
+        all: unset;
+        cursor: pointer;
+        padding-top: 20px;
+        font-size: 14px;
+        border: rgba(255, 0, 0, 0) 1px solid;
+        
+    }
+    #menu a:hover{
+        color: aqua;
+        
+    }
+
+
+
+    /* stats and Graphs ////////////////////////////////////////////// */
+
+    @keyframes loadIN{
+        0%{width: 1%;}
+        50%{width:99%}
+    
+    }
+
+
+
+    #section_stats {
+        /* display: flex; */
+        display: flex;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        position: relative;
+        justify-content: center;
+        font-size: smaller;
+        justify-content: space-between;
+        text-align: center;
+        
+        margin: 5%;
+    }
+
+
+
+    #rewardStats{
+      
+        font-size: 22px;
+/*       
+        border: red 2px solid; */
+    }
+
+
+    .graphWarpper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        justify-items: center;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+
+    .graph {
+      display: flex;
+        position: relative;
+        
+        /* overflow: hidden; */
+        
+        
+        width: 90%;
+        height: 15px;
+        border-radius: 10px;
+        background-color: red;
+        margin-top: 20%;
+    }
+
+
+    #supplyGraph{
+        display: flex;
+        overflow: hidden;
+
+    }
+    #supplyCounter{
+       background-color: aqua;
+        transition: all;
+        animation-name: loadIN;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        
+        
+        
+    }
+    #rewardGraph{
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        
+    }
+    #rewardCounter{
+
+        background-color: aqua;
+        transition: all;
+        animation-name: loadIN;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        
+    }
+
+   
+    .data{
+        position: relative;
+        margin-top: 5%;
+    }
+    #slant{
+        position: relative;
+        background-color: aliceblue;
+        width: 3px;
+        height: 20px;
+     
+    }
+
+    /* links */
+#linkContainer{
+
+display: flex;
+position: relative;
+justify-content: center;
+gap: 5px;
+width: auto;
+
+
+}
+
+
+
+#linkBtn{
+    position: relative;  
+    border-radius: 10px;
+}
+#linkBtnfollow{
+    border-radius: 10px;
+    width: 160px;
+    height: 65px;
+}
+
+#tikInfo{
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+#tikInfo p{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    position: relative;
+    font-size: 74%;
+    text-align: center;
+}
+
+
+#tikInfo_contractInfo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    font-size: 10px;
+}
+#tikInfo_contractInfo a{
+   all: unset;
+   font-size: 100%;
+   border-bottom:rgb(255, 255, 255) 2px solid ;
+}
+#tikInfo_contractInfo h4{
+    
+        position: relative;
+    padding-top: 10px;
+   font-size: 25px;
+
+}
+
+
+/* footerWindow /////////////////////////////////////////////////////////*/
+
+
+
+.footerWrapper{
+    position: relative;
+
+
+    
+}
+
+
+#windowContainer{
+
+
+}
+.windowCard{
+   position: relative;
+   
+   /* border-top: aqua 2px solid;
+   border-left: red 2px solid;
+   border-right: aqua 2px solid;
+   border-bottom: red 2px solid; */
+   border-radius: 10px;
+   width: 99%;
+   
+   font-size: 12px;
+  overflow-x: hidden;
+   margin-right: 1%;
+  
+}
+
+#tikExplorer{
+    display: flex;
+    position: sticky;
+    top: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1%;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.562);
+    margin-bottom: 3%;
+    margin-top: 3%;
+    z-index: 100;
+   
+    
+    
+}
+
+.tikItems{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-bottom:5px rgba(255, 255, 255, 0) solid ;
+    font-size: x-small;
+}
+#tikExplorer img{
+    width: 40%;
+    border-spacing: 10%;
+    
+    border: rgba(255, 0, 0, 0) 10px solid;
+    border-radius: 10px;
+}
+#mint {
+    display: flex;
+    align-items: left;
+    margin-left: 1%;
+    margin-bottom: 20%;
+    flex-direction: column;
+    
+ }
+
+ .iframe iframe{
+    width: 110%;
+    
+    height: 4000px;
+    overflow-x: hidden;
+
+ }
+ .iframe {
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+
+ }
+
+ /* #playList span{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 80%;
+   
+    flex-direction: row;
+    gap:2% ;
+    align-items: center;
+ } */
+ #playList {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+ }
+ #playList iframe{
+    display: flex;
+    position: relative;
+    width: 400px;
+    height: 1000px;
+    overflow-y: hidden;
+    flex-direction: row;
+    
+   
+    align-items: center;
+    margin-bottom: 40%;
+
+
+ }
+
+
+#dataTable{
+    position: relative;
+    overflow-x: scroll;
+    
+}
+ #tikomics table{
+    overflow-x: scroll;
+ }
+ #tikomics tr{
+    border: 1px white solid;
+ }
+ #tikomics th{
+    border: 1px white solid;
+    font-size: 8px;
+    text-align: center;
+    
+ }
+ #tikomics td{
+    border: 1px white solid;
+    text-align: left;
+    font-size: 10px;
+ }
+
+ #roadMap span{
+    display: flex;
+    justify-content: end;
+    position: relative;
+  
+    margin-right: 10px;
+    font-size: 12px;
+    margin-left: 1rem;
+    word-spacing: 3%;
+    margin-bottom: 10%;
+  }
+
+/* sig /////////////////////////////////////////////////////////////////////*/
+footer{
+    position: relative;
+    display: flex;
+    font-size: 16px;
+
+    gap: 20px;
+   justify-content: center;
+    background-color: black;
+    width: 100%;
+
+}
+footer a{
+    all: unset;
+    font-size: xx-small;
+}
+
+}
+
+/* MID SIZE//////////////////////////////////////////////////////////// */
+/* MID SIZE//////////////////////////////////////////////////////////// */
+/* MID SIZE//////////////////////////////////////////////////////////// */
+/* MID SIZE//////////////////////////////////////////////////////////// */
+/* MID SIZE//////////////////////////////////////////////////////////// */
+/* MID SIZE//////////////////////////////////////////////////////////// */
+/* MID SIZE//////////////////////////////////////////////////////////// */
+/* MID SIZE//////////////////////////////////////////////////////////// */
+
+
+@media (width >= 651px) and (width <= 949px)  {
+    *{
+        padding: 0%;
+        margin: 0%;
+        font-family: "LexendPeta";
+
+    }
+
+    html{
+        height: 100%;
+        overflow-x: hidden;
+        
+    }
+
+
+    body{
+        background: rgb(0, 0, 0);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(62, 62, 68, 1) 42%);
+        
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: aliceblue;
+        position: sticky;
+        /* width: 100vw; */
+        height: 100%;
+        overflow-x: hidden;
+        
+       
+    }
+
+
+    /* Nav Bar ///////////////////////////////////////////////////////*/
+
+    #section_Nav nav{
+        margin: 3%;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        justify-content: space-between;
+        
+    }
+    
+    #logo{
+        position: relative;
+        display: grid;
+        gap: 20px;
+        left: 25px;
+       justify-content: center;
+      
+    }
+    #logo h6{
+        position: relative;
+        left: -30px;
+    }
+
+
+    .visuallyHidden {
+        position: absolute; 
+        overflow: hidden; 
+        clip: rect(0 0 0 0); 
+        height: 1px; width: 1px; 
+        margin: -1px; padding: 0; border: 0; 
+        z-index: 99;
+    }
+    
+    .bar1 {
+        top: 0;
+        background-color: red;
+        z-index: 99;
+    }
+    
+    .bar2,
+    .bar3 {
+        top: 13.5px;
+        background-color: red;
+        z-index: 99;
+    }
+    
+    .bar3 {
+        right: 0;
+        background-color: aqua;
+        z-index: 99;
+    }
+    
+    .bar4 {
+        bottom: 0;
+        background-color: red;
+        z-index: 99;
+    }
+    
+    .hamburger .bar {
+        padding: 0;
+        width: 30px;
+        height: 4px;
+        background-color: rgb(255, 255, 255);
+        display: block;
+        border-radius: 4px;
+        transition: all 0.4s ease-in-out;
+        position: absolute; 
+    }
+    
+    .hamburger {
+        margin: 0 auto;
+        /* margin-top: 30px; */
+        width: 30px;
+        height: 30px;
+        position: relative;
+    }
+    
+    .checkbox4:checked + label > .hamburger4 > .bar1{
+        top: 13.5px;
+        background-color: transparent;
+    }
+    
+    .checkbox4:checked + label > .hamburger4 > .bar2{
+        left: 0px;
+        width: 30px;
+        transform: rotate(45deg);
+    }
+    
+    .checkbox4:checked + label > .hamburger4 > .bar3{
+        left: 0;
+        width: 30px;
+        transform: rotate(-45deg);
+    }
+    
+    .checkbox4:checked + label > .hamburger4 > .bar4{
+        background-color: transparent;
+    }
+    
+    .checkbox4:checked + label > .hamburger4 > .bar5{
+        bottom: 13.5px;
+        background-color: transparent; 
+    }
+
+
+    /* search popup/////////////////////////////////////////////////// */
+
+    @keyframes RISEUP {
+        
+        0%{left: -1200px;};
+       
+        
+        
+    }
+    @keyframes RISEIN {
+        
+        0%{left: -1200px;};
+        
+        
+       
+        
+        
+    }
+
+    #search_popup {
+        position: absolute;
+        display: none;
+        height: fit-content;
+        top: 100px;
+        left: 0px;
+        z-index: 98;
+        animation-name: RISEUP;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        transition: all;
+    }
+
+    .searchBar{
+      position: relative;
+        all: unset;
+        background: none;
+        color: aliceblue;
+        height: 20px;
+        width: 50px;
+        
+    }
+
+    #closeBTN{
+        width: 32px;
+        position: absolute;
+        top: 6px;
+        left: 90%;
+    }
+
+    .input{
+       position: relative;
+        border: 2px red solid;
+        border-radius: 10px;
+        height: 40px;
+        width: 90%;
+        padding-top: 2px;
+    }
+    .output{
+     position: relative;
+        border: 2px aqua solid;
+        border-radius: 10px;
+        background: none;
+        height: 40px;
+        width: 90%;
+        top: 4px;
+        font-size: 11px;
+       
+    }
+
+    #submit{
+      position: relative;
+        border-bottom: 1px aqua solid;
+        border-right: 1px red solid;
+        border-radius: 10px;
+        background: none;
+        color: aliceblue;
+        height: 40px;
+        left: 3px;
+        top: 50px;
+      
+    }
+    #card {
+       position: relative;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+        background-color: rgb(0, 0, 0);
+        border-radius: 20px;
+        border-left: aqua 2px solid;
+        border-bottom: red 2px solid;
+        border-top: aqua 2px solid;
+        border-right: red 2px solid;
+        height: 350PX;
+        width: 93VW;
+        top: 100px;
+        margin-left: 3%;
+        z-index: 99;
+        
+        
+    }
+    #card p{
+        position: relative;
+        top: -30px;
+        text-align: center;
+        font-size: x-small;
+        
+    }
+    #card h3{
+        position: relative;
+        top: -40px;
+        text-align: center;
+       
+        
+    }
+
+    #copyed{
+        position: absolute;
+        top: 1000px;
+    }
+    @keyframes copy-play {
+       
+        0% { opacity:100%;}
+        0% { top: 220px;}
+        100% { top: 190px;}
+        100% { opacity:10%; }
+       
+    }
+
+    #sweep{
+        position: relative;
+        animation-name: RISEUP;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        transition: ease-in-out;
+        
+    }
+
+
+
+    /* menu popup /////////////////////////////////////////////////////*/
+
+    @keyframes slideout{
+        0%{right: -800px;}
+        100%{right:-100px;}
+    }
+    @keyframes slidein{
+        0%{right: -1000px;}
+        100%{right:-100px;}
+    }
+
+    #menu_popup{
+        display: none;
+        position: absolute;
+        top: 0px;
+        width: 40%;
+        height: 300px;;
+        right: -100px;
+        border-radius: 10px;
+        border-left: aqua 2px solid;
+        border-top: red 2px solid;
+        border-top: red 2px solid;
+        background-color: rgb(0, 0, 0);
+        animation-name: slideout;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        transition: all;
+        z-index: 95;
+        
+    }
+
+    #menu{
+       
+        position: relative;
+        width: 55%;
+        padding: 5%;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: flex-start;
+        align-items: flex-end;
+        
+        
+    }
+   
+    #menuMint{
+       
+    }
+
+
+    #menu a{
+        display: block;
+        position: relative;
+        all: unset;
+        cursor: pointer;
+        padding-top: 20px;
+        font-size: 16px;
+        border: rgba(255, 0, 0, 0) 1px solid;
+        
+    }
+    #menu a:hover{
+        color: aqua;
+        
+    }
+
+
+
+    /* stats and Graphs ////////////////////////////////////////////// */
+
+    @keyframes loadIN{
+        0%{width: 1%;}
+        50%{width:99%}
+    
+    }
+
+
+
+    #section_stats {
+        /* display: flex; */
+        display: flex;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        position: relative;
+        justify-content: center;
+        font-size: smaller;
+        justify-content: space-between;
+        text-align: center;
+        
+        margin: 5%;
+    }
+
+
+
+    #rewardStats{
+      
+        font-size: 22px;
+/*       
+        border: red 2px solid; */
+    }
+
+
+    .graphWarpper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        justify-items: center;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+
+    .graph {
+      display: flex;
+        position: relative;
+        
+        /* overflow: hidden; */
+        
+        
+        width: 90%;
+        height: 15px;
+        border-radius: 10px;
+        background-color: red;
+        margin-top: 20%;
+    }
+
+
+    #supplyGraph{
+        display: flex;
+        overflow: hidden;
+
+    }
+    #supplyCounter{
+       background-color: aqua;
+        transition: all;
+        animation-name: loadIN;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        
+        
+        
+    }
+    #rewardGraph{
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        
+    }
+    #rewardCounter{
+
+        background-color: aqua;
+        transition: all;
+        animation-name: loadIN;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        
+    }
+
+   
+    .data{
+        position: relative;
+        margin-top: 5%;
+    }
+    #slant{
+        position: relative;
+        background-color: aliceblue;
+        width: 3px;
+        height: 20px;
+     
+    }
+
+    /* links */
+#linkContainer{
+
+display: flex;
+position: relative;
+justify-content: center;
+gap: 5px;
+width: auto;
+
+
+}
+
+
+
+#linkBtn{
+    position: relative;  
+    border-radius: 10px;
+}
+#linkBtnfollow{
+    border-radius: 10px;
+    width: 160px;
+    height: 65px;
+}
+
+#tikInfo{
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+#tikInfo p{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    position: relative;
+    font-size: 74%;
+    text-align: center;
+}
+
+
+#tikInfo_contractInfo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    font-size: 10px;
+}
+#tikInfo_contractInfo a{
+   all: unset;
+   font-size: 100%;
+   border-bottom:rgb(255, 255, 255) 2px solid ;
+}
+#tikInfo_contractInfo h4{
+    
+        position: relative;
+    padding-top: 10px;
+   font-size: 25px;
+
+}
+
+
+/* footerWindow /////////////////////////////////////////////////////////*/
+
+
+
+.footerWrapper{
+    position: relative;
+
+
+    
+}
+
+
+#windowContainer{
+
+
+}
+.windowCard{
+   position: relative;
+   
+   /* border-top: aqua 2px solid;
+   border-left: red 2px solid;
+   border-right: aqua 2px solid;
+   border-bottom: red 2px solid; */
+   border-radius: 10px;
+   width: 99%;
+   
+   font-size: 12px;
+  overflow-x: hidden;
+   margin-right: 1%;
+  
+}
+
+#tikExplorer{
+    display: flex;
+    position: sticky;
+    top: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1%;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.562);
+    margin-bottom: 3%;
+    margin-top: 3%;
+    z-index: 100;
+   
+    
+    
+}
+
+.tikItems{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-bottom:5px rgba(255, 255, 255, 0) solid ;
+    font-size: x-small;
+}
+#tikExplorer img{
+    width: 40%;
+    border-spacing: 10%;
+    
+    border: rgba(255, 0, 0, 0) 10px solid;
+    border-radius: 10px;
+}
+#mint {
+    display: flex;
+    align-items: left;
+    margin-left: 1%;
+    margin-bottom: 20%;
+    flex-direction: column;
+    
+ }
+
+ .iframe iframe{
+    width: 100%;
+    height: 3800px;
+    overflow-x: hidden;
+
+ }
+ .iframe {
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+
+ }
+
+ /* #playList span{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 50%;
+    flex-direction: row;
+    gap:2% ;
+    align-items: center;
+    
+ } */
+ #playList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ #playList iframe{
+    display: flex;
+    position: relative;
+    width: 400px;
+    height: 1000px;
+    overflow-y: hidden;
+    flex-direction: row;
+    
+   
+    align-items: center;
+    margin-bottom: 40%;
+
+
+ }
+
+
+#dataTable{
+    position: relative;
+    overflow-x: scroll;
+    
+    
+}
+ #tikomics table{
+    overflow-x: scroll;
+ }
+ #tikomics tr{
+    border: 1px white solid;
+ }
+ #tikomics th{
+    border: 1px white solid;
+    font-size: 8px;
+    text-align: center;
+    
+ }
+ #tikomics td{
+    border: 1px white solid;
+    text-align: left;
+    font-size: 10px;
+ }
+
+ #roadMap span{
+    display: flex;
+    justify-content: end;
+    position: relative;
+  
+    margin-right: 10px;
+    font-size: 12px;
+    margin-left: 1rem;
+    word-spacing: 3%;
+    margin-bottom: 10%;
+  }
+
+/* sig /////////////////////////////////////////////////////////////////////*/
+footer{
+    position: relative;
+    display: flex;
+    font-size: 16px;
+
+    gap: 20px;
+   justify-content: center;
+    background-color: black;
+    width: 100%;
+
+}
+footer a{
+    all: unset;
+    font-size: xx-small;
+}
+}
+
+
+@media  (width < 390px) {
+
+    #tikomics {
+        /* overflow-x: scroll; */
+        
+     }
+
+    #dataTable table{
+       
+     
+        
+    }
+
+    .iframe iframe{
+        width: 100%;
+        height: 6000px;
+        overflow-x: hidden;
+    
+     }
+    
+}

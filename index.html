@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/mobile_first.css">
+  <link rel="icon" href="https://technicallyweb3.com/wp-content/uploads/2023/06/cropped-cropped-TikToken200-32x32.png">
+  <title>TikToken Statistics - TikToken (TIK)</title>
+</head>
+<body>
+  <section id="section_Nav" name="Navbar">
+    <nav>
+
+      <img src="./img/searchICO.png" alt="" id="search_icon" width="40px" height="40px">
+      
+      
+      <h1>TikToken.TIK</h1>
+      <input type="checkbox" id="checkbox4" class="checkbox4 visuallyHidden">
+        <label for="checkbox4">
+            <div class="hamburger hamburger4">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+                <span class="bar bar4"></span>
+                <span class="bar bar5"></span>
+            </div>
+        </label>
+    </nav>
+  </section>
+
+
+
+
+  <div id="menu_popup">
+
+    <div id="menu">
+     <a href="https://wallet-docker-ov3hl4xdcq-uc.a.run.app/profile?handle="><h4>D-App</h4></a>
+     <h4 id="menuMint">Mint Token</h4>
+     <a href="https://docs.google.com/document/d/e/2PACX-1vThuwlbkrB2Oz-DY8-cQnwv__4qDGi0EyctJ8cRDHo0SbVDFibsNq4-_euloXAFig7zcYucRoHRgA7c/pub" target="_blank"><h4>WhitePapers</h4></a>
+     <a href="https://polygonscan.com/address/0x359c3ad611e377e050621fb3de1c2f4411684e92" target="_blank"><h4>Contract</h4></a>
+      
+
+    </div>
+  </div> 
+
+ 
+
+
+
+  <section id="search_popup">
+      
+    <div id="sweep">
+    
+    <div id="card">
+        <img src="./img/closeICO.png" alt="" id="closeBTN">
+        <h3>Wallet Search</h3>
+        <p>To find a wallet search for the tiktok handle of the user you want to 
+          send some TikToken to.
+        </p>
+        
+        <input type="text" name="" id="user" placeholder="@" class="searchBar input" >
+        
+        <input type="text" name="" id="display"  class="searchBar output" readonly >
+        <input type="button" value="Send Tik" id="submit">
+        <h5 id="copyed"></h5>
+        
+      </div>
+    </div>
+
+  </section>
+
+
+
+<div id="logo">
+  <img src="./img/tweb3logo.png" alt="">
+  <h6> BY @TechnicallyWeb3</h6>
+</div>
+
+
+
+
+
+
+<!-- <section id="section_stats" name="Stats">
+  
+  
+  
+  <div id="token_supply">
+    <div id="reg_user">
+      <h1 id="regStats"></h1>
+      <h4>Registered <br>Users</h4>
+    </div>
+    <div id="supplyGraph" class="graph">
+      <div id="supplyCounter"></div>
+      <div id="slant"></div>
+      
+    </div>
+
+    <div class="data remaining">
+    <h6>Remaining Supply</h6>
+    <h4 id="supplyStats"></h4>
+  </div>
+    </div>
+ 
+
+  <div class="max_supply">
+    <h1>1 Tik</h1>
+    <h4>Max <br> Supply</h4>
+    
+  </div>
+  
+  
+
+
+  <div id="follower_rewards">
+    <div id="rewardDiv">
+      <h1 id="rewardStats"></h1>
+      <h4>Rewards Pre- <br>1k Followers</h4>
+    </div>
+    <div id="rewardGraph" class="graph">
+      <div id="rewardCounter"></div>
+      <div id="slant"></div>
+      
+    </div>
+
+    <div class="data reward">
+    <h6>rewards Reduced in</h6>
+    <h4 id="rewardReduced"></h4>
+    
+  </div>
+  </div>
+  
+ 
+ 
+</section> -->
+
+<section id="section_stats" name="Stats">
+  
+  
+  
+  <div id="token_supply">
+    <div id="reg_user">
+      <h1 id="regStats"></h1>
+      <h4>Registered <br>Users</h4>
+    </div>
+
+
+
+
+
+  
+    </div>
+ 
+
+  <div class="max_supply">
+    <h1>1 Tik</h1>
+    <h4>Max <br> Supply</h4>
+    
+  </div>
+  
+  
+
+
+  <div id="follower_rewards">
+    <div id="rewardDiv">
+      <h1 id="rewardStats"></h1>
+      <h4>Rewards <br>1k Followers</h4>
+    </div>
+    
+
+ 
+  </div>
+  
+
+  
+ 
+ 
+</section>
+
+
+<div class="graphWarpper">
+
+
+  <div id="supplyGraph" class="graph">
+    <div id="supplyCounter"></div>
+    <div id="slant"></div>
+    
+  </div>
+
+
+
+  <div id="rewardGraph" class="graph">
+    <div id="rewardCounter"></div>
+    <div id="slant"></div>
+  </div>
+
+  <div class="data remaining">
+    <h6>Remaining Supply</h6>
+    <h4 class="graphTag" id="supplyStats"></h4>
+  </div>
+
+  <div class="data reward">
+    <h6>Rewards Reduced By</h6>
+    <h4 class="graphTag" id="rewardReduced"></h4>
+  </div>
+
+</div>
+
+
+
+  <div id="linkContainer"><a href="https://www.tiktok.com/@technicallyweb3" target="_blank"><img id="linkBtnfollow" src="./img/followTik.png" alt=""></a>
+ 
+    <a href="https://twitter.com/TechnicallyWeb3" target="_blank"><img id="linkBtn" src="./img/twitter.png" alt=""></a>
+  <a href="https://www.youtube.com/@technicallyweb3" target="_blank"><img id="linkBtn" src="./img/youTube.png" alt=""></a>
+  <a href="https://linktr.ee/TechnicallyWeb3" target="_blank"><img id="linkBtn" src="./img/email.png" alt=""></a>
+  <!-- <a href=""><img id="linkBtn" src="./img/moreOption.png" alt=""></a> -->
+</div>
+
+
+
+
+<section name="tikInfo" >
+  
+  <div id="tikInfo"> 
+  <p> &nbsp &nbsp &nbsp&nbspTik Token, originally conceived as a meme coin with a max supply of 1, has transformed into a utility token with a
+  unique reward structure and interesting value proposition. By linking social media identities with Web3 wallets, Tik
+  Token simplifies crypto transactions and aims to drive mainstream adoption. We'll explore the features of Tik Token, the
+  tokenomics, its roadmap, and its potential to revolutionize the way we transact in the crypto space.</p>
+  </div>
+ 
+    
+</section>
+
+
+<section class="footerWrapper">
+<div id="tikExplorer">
+
+  
+  <span class="tikItems" id="checkbox5">
+    <input type="checkbox"  class="checkbox5 visuallyHidden">
+    <img src="./img/videoICO.png" alt=""   for="checkbox5">
+    <label for="">video</label>
+  </span>
+
+<span class="tikItems" id="checkbox6">
+  <input type="checkbox"  class="checkbox6 visuallyHidden">
+    <img src="./img/mintICO.png" alt=""  for="checkbox5">
+    <label for="">Mint Token</label>
+</span>
+
+<span class="tikItems" id="checkbox7">
+  <input type="checkbox"  class="checkbox7 visuallyHidden">
+  <img src="./img/GraphICO.png" alt=""  for="checkbox5">
+  <label for="">Tiktokenomics</label>
+</span>
+<span class="tikItems" id="checkbox8">
+  <input type="checkbox"  class="checkbox8 visuallyHidden">
+    <img src="./img/roadICO.png" alt="" for="checkbox5">
+    <label for="">RoadMap</label>
+</span>
+
+  
+  
+  
+  
+
+</div>
+
+<div id="windowContainer" class="windowCard">
+  <span id="targetVideo"></span>
+  <h2 style="color: rgb(179, 5, 5);">WHAT ITS ALL ABOUT!</h2>
+<section id="playList" for="Video">
+  
+<span>
+  <iframe
+  src="https://www.tiktok.com/embed/v2/7250191938668793093"
+  width="100%"
+  height="100%"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+</span>
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+</section>
+
+
+<span id="targetMint"></span><br><br><br><br><br>
+
+
+<section id="mint" for="Mint">
+  <h2 style=" color: rgb(179, 5, 5); justify-content: center; display: flex;">Mint TikToken</h2><br>
+
+<span>
+<p>Get rewarded by linking your TikTok account with your Web3 wallet. You’ll earn more TikToken based on how many
+  followers you have on TikTok. But don’t mint too late, once halving occurs it’ll be 10x harder to mint the same amount
+  of TIK!</p>
+  <br><br>
+  
+</span>
+
+</section>
+
+<span class="iframe">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSderOhysGQjJav8mXnLv9UjH6iLJstoUv7As2E7NRKtj5mD8A/viewform?embedded=true&pli=1" frameborder="0"></iframe>
+  </span>
+<span id="targetTik"></span><br><br><br><br><br>
+<section id="tikomics" for="Tiktokenomics">
+  <h2 style=" color: rgb(179, 5, 5);justify-content: center; display: flex;">Tiktokenomics</h2><br>
+  <p>TikToken has unique tokenomics. Firstly, it has a max supply of 1, meaning the asset price will be greater than or
+    equal to the market cap of the token. Not only that but the amount you own is equal to the percentage you own,
+    represented as a decimal value of the max supply. Ie. If you have 0.01 TIK that`s equivalent to owning 1%.
+  
+    We also employ a unique halving cycle, where remaining supply is cut in half the reward is cut by a factor of 10 to
+    ensure the longevity of the network. This means that as time goes on the wealthiest owners have the fewest 0s unlike
+    traditional finance where more 0s usually mean you have more.</p><br>
+    
+    <h3 style="color: rgb(179, 5, 5); justify-content: center; display: flex;">The Halving Cycle</h3><br>
+    <p>There will be 13 halving cycles, the first one starts at 0.4096 TIK when rewards get reduced from 0.00001 (0.₄₋1) TIK
+      to 0.000001 (0.₅₋1) TIK per 1000 followers (rounded up). This carries on until the last halving cycle the last one at
+      0.0001 TIK where rewards drop to 0.000000000000000001 (0.₁₇₋1) TIK per 1000 followers. During the last halving cycle,
+      rewards are rounded down per 1000 followers instead of rounded up
+    
+      Here`s a list of all halvings and the total follower count to get to the next halving.</p><br><br>
+      <span id="dataTable">
+      <table>
+        <tr>
+          <th>Halving</th>
+          <th>Remaining Supply</th>
+          <th>Rewards in Halving</th>
+          <th>Reward per 1000 followers</th>
+          <th>Total Follower Count to next Halving</th>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>0.8192 TIK</td>
+          <td>0.4098 TIK</td>
+          <td>0.₄₋1 TIK</td>
+          <td>40,980,000</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>0.4096 TIK</td>
+          <td>0.2048 TIK</td>
+          <td>0.₅₋1 TIK</td>
+          <td>204,800,000</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>0.2048 TIK</td>
+          <td>0.1024 TIK</td>
+          <td>0.₆₋1 TIK</td>
+          <td>1,024,000,000</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>0.1024 TIK</td>
+          <td>0.0512 TIK</td>
+          <td>0.₇₋1 TIK</td>
+          <td>5,120,000,000</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>0.0512 TIK</td>
+          <td>0.0256 TIK</td>
+          <td>0.₈₋1 TIK</td>
+          <td>25,600,000,000</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>0.0256 TIK</td>
+          <td>0.0128 TIK</td>
+          <td>0.₉₋1 TIK</td>
+          <td>1,280,000,000,000</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>0.0128 TIK</td>
+          <td>0.0064 TIK</td>
+          <td>0.₁₀₋1 TIK</td>
+          <td>6,400,000,000,000</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>0.0064 TIK</td>
+          <td>0.0032 TIK</td>
+          <td>0.₁₁₋1 TIK</td>
+          <td>32,000,000,000,000</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>0.0032 TIK</td>
+          <td>0.0016 TIK</td>
+          <td>0.₁₂₋1 TIK</td>
+          <td>160,000,000,000,000</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>0.0016 TIK</td>
+          <td>0.0008 TIK</td>
+          <td>0.₁₃₋1 TIK</td>
+          <td>800,000,000,000,000</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>0.0008 TIK</td>
+          <td>0.0004 TIK</td>
+          <td>0.₁₄₋1 TIK</td>
+          <td>4,000,000,000,000,000</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>0.0004 TIK</td>
+          <td>0.0002 TIK</td>
+          <td>0.₁₅₋1 TIK</td>
+          <td>20,000,000,000,000,000</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>0.0002 TIK</td>
+          <td>0.0001 TIK</td>
+          <td>0.₁₆₋1 TIK</td>
+          <td>100,000,000,000,000,000</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>0.0001 TIK</td>
+          <td>0.0001 TIK</td>
+          <td>0.₁₇₋1 TIK</td>
+          <td>1,000,000,000,000,000,000</td>
+        </tr>
+      </table>
+      </span>
+
+
+    </span>
+  </section>
+
+<span id="targetMap"><br><br><br><br><br>
+</span>
+<section id="roadMap" for="RoadMap">
+  <h2 style=" color: rgb(179, 5, 5); justify-content: center; display: flex;">RoadMap</h2><br>
+  <span>
+  
+
+  <ul>
+    <li>
+      Road Map:
+      <ul>
+        <li>Launch Beta API and API viewer</li>
+        <li>Enlist up to 100 developers to use the name resolution service in their Web3 platforms.</li>
+        <li>Create and deploy a visual way to represent the database</li>
+        <li>Deadline: July 14, 2023.</li>
+      </ul>
+    </li><br><br><br>
+    <li>
+      Integration of Additional Platforms:
+      <ul>
+        <li>Integrate a new platform every week, starting with TikTok.</li>
+        <li>Platforms to integrate: Twitter, YouTube/Google, Instagram, Telegram, Reddit, Discord, and GitHub.</li>
+        <li>Address individual approval processes and challenges.</li>
+        <li>Ensure compatibility and modify existing resolver modules.</li>
+        <li>Engage with platforms' communities and development teams.</li>
+        <li>Deadline: August 1, continual</li>
+      </ul>
+      
+    </li><br><br><br>
+    <li>
+      Create V2 Smart Contract:
+      <ul>
+        <li>Add in the default wallet, account signing and governance</li>
+        <li>Modify the tokenomics based on learning lessons from the initial drop.</li>
+        <li>Fix liquidity issues while still locking tokens.</li>
+        <li>Validate and test the contract on test net while completing security audits.</li>
+        <li>Deadline: September 2023</li>
+      </ul>
+      
+    </li><br><br><br>
+    <li>
+      Fork Major Open-Source Hot Wallets:
+      <ul>
+        <li>Fork MetaMask and Trust Wallet.</li>
+        <li>Identify existing resolver modules and add your own.</li>
+        <li>Incorporate basic features for sending crypto to social media handles.</li>
+        <li>Establish communication with the development teams.</li>
+        <li>Ensure security and open the code for auditing.</li>
+        <li>Deadline: November 1, 2023.</li>
+      </ul>
+      
+    </li><br><br><br>
+    <li>
+      Announce and Launch Beta dApp (WebPort):
+      <ul>
+        <li>Provide a unified experience across web1, web2, and Web3.</li>
+        <li>Enable non-custodial and self-custody wallets.</li>
+        <li>Link existing self-custody wallets (e.g., MetaMask and Trust Wallet).</li>
+        <li>Include self-custody blue checkmark system, KYC integration, and tipping features.</li>
+        <li>Provide user support and documentation.</li>
+        <li>Ensure security and privacy of user data.</li>
+        <li>Deadline: March 2023 until further notice.</li>
+      </ul>
+      
+    </li><br><br><br>
+    <li>
+      Drop Beta API/WebPort and Go Fully Public:
+      <ul>
+        <li>Transition from beta to fully public version of WebPort dApp.</li>
+        <li>Collect user feedback and implement improvements.</li>
+        <li>Develop a marketing strategy to attract users.</li>
+        <li>Introduce a new premium API with advanced integration capabilities.</li>
+        <li>Expand team or seek partnerships as needed.</li>
+        <li>Measure success and user satisfaction.</li>
+        <li>Deadline: Q3 2024.</li>
+      </ul>
+      
+    </li><br><br><br>
+    <li>
+      Domain name integration
+      <ul>
+        <li>Incorporate TLDs as a bridge between Web1, Web2 and Web3.</li>
+        <li>Learn about becoming a registrar and what it would take to use standard domains.</li>
+        <li>Deadline: 2025</li>
+      </ul>
+      
+    </li>
+  </ul><br><br><br>
+</span>
+</section>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</section>
+
+  
+
+
+<footer>
+ 
+  <br><br><h6>&reg2023 TikToken&copy</h6> &nbsp; <h6><a href="https://frocode.com/">PoweredBy - {froCode}</a></h6><br>
+  <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
+
+
+
