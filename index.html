@@ -30,7 +30,6 @@
 
 
 
-
   <div id="menu_popup">
 
     <div id="menu">
@@ -268,17 +267,21 @@
 
 <div id="windowContainer" class="windowCard">
   <span id="targetVideo"></span>
-  <h2 style="color: rgb(179, 5, 5);">WHAT ITS ALL ABOUT!</h2>
+  <h2 style="color: rgb(179, 5, 5);">WHAT ITS ALL ABOUT!</h2><br>
 <section id="playList" for="Video">
   
 <span>
-  <iframe
+
+  <video class="pageVideos" controls>
+    <source src="./video/video1.mp4" type="video/mp4">
+  </video>
+  <!-- <iframe
   src="https://www.tiktok.com/embed/v2/7250191938668793093"
   width="100%"
   height="100%"
   frameborder="0"
   allowfullscreen
-></iframe>
+></iframe> -->
 </span>
   <!-- //////////////////////////////////////////////////////////////////////////// -->
 </section>
@@ -295,17 +298,27 @@
   followers you have on TikTok. But don’t mint too late, once halving occurs it’ll be 10x harder to mint the same amount
   of TIK!</p>
   <br><br>
-  
+
+</span>
+
+<span id="mintSpan"  >
+  <!-- <input type="button" value="Mint Now" id="mintBtn"> -->
+  <input type="button" value="Mint Now" id="mintBtn" >
 </span>
 
 </section>
 
-<span class="iframe">
+<!-- <span class="iframe">
   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSderOhysGQjJav8mXnLv9UjH6iLJstoUv7As2E7NRKtj5mD8A/viewform?embedded=true&pli=1" frameborder="0"></iframe>
-  </span>
+  </span> -->
+
+
+
+
 <span id="targetTik"></span><br><br><br><br><br>
 <section id="tikomics" for="Tiktokenomics">
   <h2 style=" color: rgb(179, 5, 5);justify-content: center; display: flex;">Tiktokenomics</h2><br>
+
   <p>TikToken has unique tokenomics. Firstly, it has a max supply of 1, meaning the asset price will be greater than or
     equal to the market cap of the token. Not only that but the amount you own is equal to the percentage you own,
     represented as a decimal value of the max supply. Ie. If you have 0.01 TIK that`s equivalent to owning 1%.
@@ -314,13 +327,15 @@
     ensure the longevity of the network. This means that as time goes on the wealthiest owners have the fewest 0s unlike
     traditional finance where more 0s usually mean you have more.</p><br>
     
-    <h3 style="color: rgb(179, 5, 5); justify-content: center; display: flex;">The Halving Cycle</h3><br>
+    <h3 style="color: rgb(228, 228, 228); justify-content: center; display: flex;">The Halving Cycle</h3><br>
+
     <p>There will be 13 halving cycles, the first one starts at 0.4096 TIK when rewards get reduced from 0.00001 (0.₄₋1) TIK
       to 0.000001 (0.₅₋1) TIK per 1000 followers (rounded up). This carries on until the last halving cycle the last one at
       0.0001 TIK where rewards drop to 0.000000000000000001 (0.₁₇₋1) TIK per 1000 followers. During the last halving cycle,
       rewards are rounded down per 1000 followers instead of rounded up
     
       Here`s a list of all halvings and the total follower count to get to the next halving.</p><br><br>
+
       <span id="dataTable">
       <table>
         <tr>
@@ -546,8 +561,22 @@
 
 
 <footer>
+  
+  <span id="about">
+   
+  </span>
+
+
+  <span id="sig"> 
+    <h6>&reg2023 TikToken&copy</h6> 
+    <h6 id="froMob1"><a href="https://frocode.com/">PoweredBy - {froCode}</a></h6>
+    <h6><a href="./terms/tos.html">Terms Of Service</a></h6>
+    <h6><a href="./terms/poilicy.html">Privacy Poilicy</a></h6>
+    <h6 id="froMob"><a href="https://frocode.com/">PoweredBy - {froCode}</a></h6>
+  </span>
  
-  <br><br><h6>&reg2023 TikToken&copy</h6> &nbsp; <h6><a href="https://frocode.com/">PoweredBy - {froCode}</a></h6><br>
+
+</footer>
   <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>
