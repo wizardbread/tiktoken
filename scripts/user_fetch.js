@@ -78,16 +78,28 @@ document.addEventListener('DOMContentLoaded',()=>{
             supply_stats_counter.style.width = `80%`
 
         }
-        if(statData.notationValues.remainingSupplyNot <= 0.6){
+        if(statData.notationValues.remainingSupplyNot <= 0.79){
+            supply_stats_counter.style.width = `70%`
+
+        }
+        if(statData.notationValues.remainingSupplyNot <= 0.69){
             supply_stats_counter.style.width = `60%`
 
         }
-        if(statData.notationValues.remainingSupplyNot <= 0.4){
+        if(statData.notationValues.remainingSupplyNot <= 0.59){
+            supply_stats_counter.style.width = `50%`
+
+        }
+        if(statData.notationValues.remainingSupplyNot <= 0.49){
             supply_stats_counter.style.width = `40%`
 
         }
-        if(statData.notationValues.remainingSupplyNot <= 0.2){
+        if(statData.notationValues.remainingSupplyNot <= 0.29){
             supply_stats_counter.style.width = `20%`
+
+        }
+        if(statData.notationValues.remainingSupplyNot <= 0.19){
+            supply_stats_counter.style.width = `10%`
 
         }
 
@@ -102,20 +114,23 @@ document.addEventListener('DOMContentLoaded',()=>{
         if(statData.decimalValues.untilHalvingDec <= 1){
             reward_stats_counter.style.width = `90%`
         }
-        if(statData.decimalValues.untilHalvingDec  <= 0.8){
+        if(statData.decimalValues.untilHalvingDec  <= 0.89){
              reward_stats_counter.style.width = `80%`
 
         }
-        if(statData.decimalValues.untilHalvingDec  <= 0.6){
+        if(statData.decimalValues.untilHalvingDec  <= 0.69){
              reward_stats_counter.style.width = `60%`
 
         }
-        if(statData.decimalValues.untilHalvingDec  <= 0.4){
+        if(statData.decimalValues.untilHalvingDec  <= 0.49){
              reward_stats_counter.style.width = `40%`
 
         }
-        if(statData.decimalValues.untilHalvingDec  <= 0.2){
-             reward_stats_counter.style.width
+        if(statData.decimalValues.untilHalvingDec  <= 0.29){
+             reward_stats_counter.style.width = `20%`
+        }
+        if(statData.decimalValues.untilHalvingDec  <= 0.19){
+             reward_stats_counter.style.width = `10%`
         }
         
         //reward_stats.innerText = `${statData.notationValues.currentRewardNot}`

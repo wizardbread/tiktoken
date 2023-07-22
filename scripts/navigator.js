@@ -16,12 +16,7 @@ const targetVideo = document.getElementById('targetVideo')
 const targetTik = document.getElementById('targetTik')
 const targetMap = document.getElementById('targetMap')
 const MenuMint = document.getElementById('menuMint')
-
-
-
-
-windowContainer.addEventListener('scroll', (event)=>{
-})
+let mintBtn = document.getElementById('mintBtn')
 
 
 videoHTML.addEventListener("click",()=>{
@@ -81,6 +76,19 @@ mintHTML.addEventListener("click",()=>{
 })
 
 
+function toMint(){
+  
+
+  return location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSderOhysGQjJav8mXnLv9UjH6iLJstoUv7As2E7NRKtj5mD8A/viewform'
+
+
+}
+
+mintBtn.addEventListener('click', () =>{
+  toMint()
+})
+
+
 MenuMint.addEventListener("click",()=>{
 
     mapHTML.style.borderBottom=""
@@ -109,6 +117,11 @@ tikHTML.addEventListener("click",()=>{
   })
   
 })
+
+
+
+
+
 
 
 

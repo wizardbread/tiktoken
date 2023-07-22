@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'LexendPeta';
+    src: url("../fonts/LexendPeta-VariableFont_wght.ttf");
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'LexendPeta';
+}
+
+a{
+    position: sticky;
+    all: unset;
+    font-size: 40px;
+    margin-left: 15px;
+    cursor: pointer;
+    text-shadow: 3px 2px aqua;
+    margin-bottom: 3%;
+}
+
+#head{
+    
+    text-shadow:    2px 1px rgb(80, 80, 80);
+    color: rgb(0, 0, 0);
+    margin-bottom: 4px;
+    
+}
+
+
+
+
+#line{
+    border: red 1px solid;
+    border-radius: 100px;
+    width: 90%;
+    
+}
+
+#line1{
+
+    border: rgb(0, 0, 0) 1.5px solid;
+    width: 100%;
+
+}
+
+#line2{
+    position: relative;
+    border: aqua 1px solid;
+    width: 90%;
+    left: 10%;
+    margin-bottom: 5%;
+}
+
+
+
+
+span{
+   
+    top: 100px;
+}
+h2{
+    
+    width: 75%;
+    margin-left: 5%;
+}
+h1{
+    
+    width: 75%;
+    margin-left: 5%;
+}
+
+p{
+    width: 55%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+
+}
+
+
+
+
+
+@media (width < 720px) {
+    a{
+        font-size: larger;
+    }
+ 
+    span{
+        width: 100%;
+    }
+    h1{
+        font-size: 14px;
+       
+    }
+
+    h2{
+        font-size: smaller;
+    }
+    p{
+        font-size: 12px;
+        margin-bottom: 10%;
+
+    }
+
+
+    
+}
+@media (width >= 651px) and (width <= 949px) {
+    a{
+        font-size: larger;
+    }
+ 
+    span{
+        width: 100%;
+    }
+    h1{
+        font-size: 18px;
+       
+    }
+
+    h2{
+        font-size: large;
+    }
+    p{
+        font-size: 14px;
+        margin-bottom: 10%;
+
+    }
+
+
+    
+}
